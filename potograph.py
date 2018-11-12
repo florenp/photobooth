@@ -134,7 +134,7 @@ class interface():
             img = self.readImgFromCamera()
             self.screen.blit(img, (0, 0))
             pygame.display.flip()
-            r = buzz1.readcontroller(timeout=500)
+            r = buzz1.readcontroller(timeout=50)
             if r != None and i == 0:
                 i = 1
                 buzz1.setlight(0)
